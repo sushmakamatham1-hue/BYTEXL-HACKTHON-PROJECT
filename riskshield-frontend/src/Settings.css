@@ -1,0 +1,108 @@
+.settings-page {
+  min-height: 100vh;
+  padding: 30px;
+  background: #080b14;
+  color: white;
+}
+
+.settings-header {
+  margin-bottom: 25px;
+}
+
+.settings-header h1 {
+  font-size: 32px;
+  margin: 0 0 8px;
+}
+
+.settings-header p {
+  color: #8f98ad;
+}
+
+.settings-card {
+  background: #111625;
+  border: 1px solid #20283b;
+  border-radius: 18px;
+  padding: 25px;
+  margin-bottom: 20px;
+  max-width: 850px;
+}
+
+.settings-card h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+  border-bottom: 1px solid #20283b;
+}
+
+.setting-row:last-child {
+  border-bottom: none;
+}
+
+.setting-info strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.setting-info span {
+  color: #8f98ad;
+  font-size: 14px;
+}
+
+.toggle {
+  width: 48px;
+  height: 25px;
+  border-radius: 20px;
+  background: #30384d;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.toggle.active {
+  background: #7c5cff;
+}
+
+.toggle::after {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  background: white;
+  border-radius: 50%;
+  top: 3px;
+  left: 4px;
+  transition: 0.2s;
+}
+
+.toggle.active::after {
+  left: 25px;
+}
+
+.theme-select {
+  background: #181e2e;
+  color: white;
+  border: 1px solid #30384d;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.save-button {
+  background: #7c5cff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.save-button:hover {
+  background: #6848e8;
+}
+
